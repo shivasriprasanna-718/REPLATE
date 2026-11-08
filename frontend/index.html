@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Replate — Rescue Surplus Food, Feed Communities</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="logo">Re<span>plate</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="donate.html">Donate Food</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="recipient.html">Recipients</a>
+      <a href="leaderboard.html">Leaderboard</a>
+    </div>
+    <div class="nav-cta">
+      <a href="donate.html" class="btn btn-tomato btn-sm">Donate Now</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow" style="color:var(--mango)">Food rescue, redistributed in real time</span>
+      <h1>Surplus food shouldn't go to waste while <em>people go hungry</em>.</h1>
+      <p class="lead">
+        Replate connects hotels, restaurants, hostels and event venues that have
+        extra food with NGOs, shelters and daycare centers that need it —
+        verified safe, tracked in real time, and delivered before it spoils.
+      </p>
+      <div class="hero-actions">
+        <a href="donate.html" class="btn btn-primary">Donate Surplus Food</a>
+        <a href="volunteer.html" class="btn btn-outline">Become a Volunteer</a>
+        <a href="recipient.html" class="btn btn-outline">Register as Recipient</a>
+      </div>
+    </div>
+
+    <div class="ledger">
+      <div class="ledger-title"><span>Rescue Ledger</span><span>Live</span></div>
+      <div id="ledger-body">
+        <!-- filled by home.js -->
+      </div>
+      <div class="ledger-total">
+        <span>Meals rescued today</span>
+        <span class="val" data-stat="mealsRescued">—</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The problem</span>
+      <h2>Good food goes to waste while people nearby go without it</h2>
+      <p>
+        Every day, hotels, restaurants, hostels and event venues discard
+        large quantities of safe, edible food — not because it's unsafe,
+        but because there's no coordinated, technology-based way to collect
+        and redistribute it before it spoils.
+      </p>
+    </div>
+
+    <div class="paths">
+      <div class="path-card donate">
+        <div class="path-icon">🍲</div>
+        <h3>Have extra food?</h3>
+        <p>Request a pickup in one click — no packing needed. Add photos so volunteers know what to expect.</p>
+        <a href="donate.html" class="btn btn-tomato btn-sm">Request Pickup</a>
+      </div>
+      <div class="path-card volunteer">
+        <div class="path-icon">🚴</div>
+        <h3>Want to help collect?</h3>
+        <p>Get notified about nearby requests, log hygiene checks, and mark deliveries complete.</p>
+        <a href="volunteer.html" class="btn btn-primary btn-sm">Open Dashboard</a>
+      </div>
+      <div class="path-card receive">
+        <div class="path-icon">🏠</div>
+        <h3>Run a shelter or daycare?</h3>
+        <p>Register your organization and set preferences for food type, quantity and delivery times.</p>
+        <a href="recipient.html" class="btn btn-outline-dark btn-sm">Register Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2>From leftover to delivered, in four steps</h2>
+    </div>
+    <div class="workflow">
+      <div class="step">
+        <h3>Request pickup</h3>
+        <p>A donor opens Replate and taps "Request Pickup," adding food type, quantity and photos.</p>
+      </div>
+      <div class="step">
+        <h3>Volunteer notified</h3>
+        <p>The nearest available volunteer or partner org gets the request and heads to the location.</p>
+      </div>
+      <div class="step">
+        <h3>Checked &amp; verified</h3>
+        <p>Food is checked for safety and hygiene, packed, and given a "Verified Safe" badge.</p>
+      </div>
+      <div class="step">
+        <h3>Delivered with care</h3>
+        <p>Food reaches an NGO or daycare center; the donor gets a notification and a Kindness Points badge.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Impact so far</span>
+      <h2>Every rescued meal counts, literally</h2>
+    </div>
+    <div class="stats">
+      <div class="stat">
+        <span class="num" data-stat="mealsRescued">—</span>
+        <span class="label">Meals rescued</span>
+      </div>
+      <div class="stat">
+        <span class="num" data-stat="kgCo2Saved">—</span>
+        <span class="label">kg CO₂ saved</span>
+      </div>
+      <div class="stat">
+        <span class="num" data-stat="activeDonors">—</span>
+        <span class="label">Active donors</span>
+      </div>
+      <div class="stat">
+        <span class="num" data-stat="ngoPartners">—</span>
+        <span class="label">NGO partners</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container" style="text-align:center">
+    <span class="eyebrow">Zero-waste, always</span>
+    <h2 style="color:var(--forest);max-width:640px;margin:8px auto 12px">
+      Food unsafe for people? It still doesn't go to a landfill.
+    </h2>
+    <p style="max-width:560px;margin:0 auto">
+      Anything that fails our safety check is diverted to composting or
+      cocopeat production instead — closing the loop and cutting greenhouse
+      gas emissions from food waste.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <span>© 2026 Replate. Built to reduce food waste and hunger.</span>
+    <span>SDG 2 — Zero Hunger · SDG 12 — Responsible Consumption</span>
+  </div>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

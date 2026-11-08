@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Volunteer Dashboard — Replate</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="logo">Re<span>plate</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="donate.html">Donate Food</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="recipient.html">Recipients</a>
+      <a href="leaderboard.html">Leaderboard</a>
+    </div>
+    <div class="nav-cta">
+      <a href="donate.html" class="btn btn-tomato btn-sm">Donate Now</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <span class="eyebrow">Volunteer</span>
+    <h1 style="color:var(--forest);font-size:2rem">Nearby pickup requests</h1>
+    <p>Claim a pickup, verify the food is safe, and mark it Completed once collected — then Delivered once it reaches its destination.</p>
+
+    <div class="list" id="pickup-list">
+      <!-- filled by volunteer.js -->
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <span>© 2026 Replate. Built to reduce food waste and hunger.</span>
+    <span>SDG 2 — Zero Hunger · SDG 12 — Responsible Consumption</span>
+  </div>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/volunteer.js"></script>
+</body>
+</html>

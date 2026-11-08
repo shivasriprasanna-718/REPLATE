@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Donate Food — Replate</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="logo">Re<span>plate</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="donate.html">Donate Food</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="recipient.html">Recipients</a>
+      <a href="leaderboard.html">Leaderboard</a>
+    </div>
+    <div class="nav-cta">
+      <a href="donate.html" class="btn btn-tomato btn-sm">Donate Now</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container" style="max-width:760px">
+    <span class="eyebrow">Donor</span>
+    <h1 style="color:var(--forest);font-size:2rem">Request a food pickup</h1>
+    <p>Tell us what you have — a volunteer nearby will be notified and can be at your door within the hour.</p>
+
+    <div class="card">
+      <form id="donate-form">
+        <div class="form-grid">
+          <div class="field">
+            <label for="source">Your name / organization</label>
+            <input type="text" id="source" name="source" placeholder="e.g. Sunrise Banquet Hall" required />
+          </div>
+          <div class="field">
+            <label for="contact">Contact number</label>
+            <input type="tel" id="contact" name="contact" placeholder="10-digit phone number" required />
+          </div>
+          <div class="field">
+            <label for="foodType">Type of food</label>
+            <select id="foodType" name="foodType" required>
+              <option value="">Select type</option>
+              <option>Cooked meals</option>
+              <option>Bakery items</option>
+              <option>Packaged food</option>
+              <option>Fruits &amp; vegetables</option>
+              <option>Event leftovers</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="quantity">Estimated quantity</label>
+            <input type="text" id="quantity" name="quantity" placeholder="e.g. 20 meals / 5 kg" required />
+          </div>
+          <div class="field full">
+            <label for="address">Pickup address</label>
+            <input type="text" id="address" name="address" placeholder="Street, area, city" required />
+          </div>
+          <div class="field">
+            <label for="pickupTime">Preferred pickup time</label>
+            <input type="datetime-local" id="pickupTime" name="pickupTime" required />
+          </div>
+          <div class="field">
+            <label for="expiry">Food safe to eat until</label>
+            <input type="datetime-local" id="expiry" name="expiry" required />
+          </div>
+          <div class="field full">
+            <label for="notes">Notes for the volunteer (optional)</label>
+            <textarea id="notes" name="notes" placeholder="Allergens, packaging, entrance instructions..."></textarea>
+          </div>
+          <div class="field full">
+            <label>Photos of the food (optional but helps volunteers)</label>
+            <div class="file-drop" id="file-drop">
+              Click or drag photos here
+              <input type="file" id="photos" name="photos" accept="image/*" multiple hidden />
+            </div>
+            <div id="photo-preview"></div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-tomato">Request Pickup</button>
+        <div id="donate-msg" class="form-msg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <span>© 2026 Replate. Built to reduce food waste and hunger.</span>
+    <span>SDG 2 — Zero Hunger · SDG 12 — Responsible Consumption</span>
+  </div>
+</footer>
+
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+<script src="js/donate.js"></script>
+</body>
+</html>
